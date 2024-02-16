@@ -3,12 +3,27 @@
 #include <math.h>
 
 double eq(double x){
-    float f;
-    f=cos(x)*3*x-1;
-    return f;
+    double f;
+    f= x * x * x - 4 * x - 9;
+    return (f);
 }
 
 int main(){
-    float x1=2,x2=3,range=0.0001;
-    printf("Iteration ")
+    float x1=2,x2=3;
+    float range=0.000001;
+    double z,x3;
+    int i=1;
+    do{
+        printf("Interation:%d\n",i);
+        printf("x1=%f\tx2=%f\t",x1,x2);
+        x3=(x1+x2)/2;
+        printf("x3=%f\t\n",x3);
+        z=eq(x3);
+        if(z>0)
+            x2=x3;
+        else
+            x1=x3;
+    i++;
+    }while(fabs(x1-x2)>=range);
+    return 0;
 }
