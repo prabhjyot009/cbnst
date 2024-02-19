@@ -35,7 +35,7 @@ int main(){
         x1=x2;
         x2=x3;
         i++;
-    }while(fabs(x2-x1)>0.0005);
+    }while(fabs(x2-x1)>0.00001);
     printf("Approximate root is:%f",x3);
     return 0;
 }
