@@ -13,7 +13,7 @@ int main()
     abs = fabs(err);
     rel = abs / ac;
     per = rel * 100;
-    printf("Error: %.4f\nAbsolute Error: %.4f\nRelative Error: %.4f\nPercentage Error: %.4f", err, abs, rel, per);
+    printf("Error: %f\nAbsolute Error: %f\nRelative Error: %f\nPercentage Error: %f", err, abs, rel, per);
     getch();
     return 0;
 }
