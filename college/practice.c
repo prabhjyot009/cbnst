@@ -14,7 +14,7 @@ int main(){
     double z,x3;
     int i=1;
     do{
-        printf("Interation:%d\n",i);
+        printf("Interation:%d\t",i);
         printf("x1=%f\tx2=%f\t",x1,x2);
         x3=(x1+x2)/2;
         printf("x3=%f\t\n",x3);
