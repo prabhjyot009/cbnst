@@ -14,6 +14,7 @@ void find_intervals(float *x1,float *x2){
         f1=eq(it);
         f2=eq(it+1);
         if((f1>0&&f2<0)||(f1<0&&f2>0)){
+            printf("\nThe intervals for the given equation is\n%d\n%d\n",it,it+1);
             *x1=it;
             *x2=it+1;
         }
@@ -35,7 +36,7 @@ int main(){
         x1=x2;
         x2=x3;
         i++;
-    }while(fabs(x2-x1)>0.00001);
+    }while(fabs(x2-x1)>0.0001);
     printf("Approximate root is:%f",x3);
     return 0;
 }
