@@ -20,6 +20,7 @@ void find_intervals(float *x1,float *x2){
         }
     }
 }
+
 int main(){
     float x1,x2,x3,f1,f2,f3;
     find_intervals(&x1,&x2);
