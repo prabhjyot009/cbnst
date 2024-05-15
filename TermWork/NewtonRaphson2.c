@@ -1,12 +1,10 @@
-#include <conio.h>
 #include <stdio.h>
 #include <math.h>
-#define f(x) x-exp(-x)
-#define g(x) 1+exp(-x) 
-
+#define f(x) x*sin(x)+cos(x)
+#define g(x) x*cos(x)+sin(x)
 int main()
 {
-    float x0 = 1, x1, f0, f1, g0, range = 0.0001;
+    float x0 = 3.14159, x1, f0, f1, g0, range = 0.0001;
     int steps = 1;
     do
     {

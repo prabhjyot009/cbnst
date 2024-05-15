@@ -1,6 +1,6 @@
 #include<stdio.h>
 float f(float x){
-return 1.0 / (1.0 + x);}
+return 1.0 / (1.0 + x*x);}
 float integrate(float (*func)(float), float a, float b, int n){
 float h = (b - a) / n;
 float sum = 0.5 * (func(a) + func(b));

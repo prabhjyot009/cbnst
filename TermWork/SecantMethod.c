@@ -4,7 +4,7 @@
 
 float eq(float x){
     float f;
-    f=(x*x*x)-(3*x)+1;
+    f=(x*x*x)-(5*x)+1;
     return (f);
 }
 void find_intervals(float *x1,float *x2){
@@ -20,7 +20,7 @@ void find_intervals(float *x1,float *x2){
         }
     }
 }
-
+//interval: 2, 2.5
 int main(){
     float x1,x2,x3,f1,f2,f3;
     find_intervals(&x1,&x2);
