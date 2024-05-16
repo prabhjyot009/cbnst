@@ -8,27 +8,9 @@ float eq(float x)
     f = (x * x * x) - (5 * x) + 1;
     return (f);
 }
-void find_intervals(float *x1, float *x2)
-{
-    float f1, f2;
-    int it;
-    for (it = 0; it < 10; it++)
-    {
-        f1 = eq(it);
-        f2 = eq(it + 1);
-        if ((f1 > 0 && f2 < 0) || (f1 < 0 && f2 > 0))
-        {
-            printf("\nThe intervals for the given equation is\n%d\n%d\n", it, it + 1);
-            *x1 = it;
-            *x2 = it + 1;
-        }
-    }
-}
-// interval: 2, 2.5
 int main()
 {
-    float x1, x2, x3, f1, f2, f3;
-    find_intervals(&x1, &x2);
+    float x1=2, x2=2.5, x3, f1, f2, f3;
     int i = 1;
     do
     {

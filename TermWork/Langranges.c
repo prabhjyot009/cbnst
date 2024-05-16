@@ -5,8 +5,6 @@ void main()
 {
 	 float x[100], y[100], xp, yp=0, p;
 	 int i,j,n;
-	 clrscr();
-	 /* Input Section */
 	 printf("Enter number of data: ");
 	 scanf("%d", &n);
 	 printf("Enter data:\n");
@@ -19,7 +17,6 @@ void main()
 	 }
 	 printf("Enter interpolation point: ");
 	 scanf("%f", &xp);
-	 /* Implementing Lagrange Interpolation */
 	 for(i=1;i<=n;i++)
 	 {
 		  p=1;
