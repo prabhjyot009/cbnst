@@ -41,7 +41,7 @@ void main()
             diffTable[i][j] = diffTable[i + 1][j - 1] - diffTable[i][j - 1];
         }
     }
-
+    // Calculate the value of y for the given x p is the value of y d is the final value of y s is the value of the difference f is the value of x
     p = 1;
     d = y[0];
     s = (f - x[0]) / h;
